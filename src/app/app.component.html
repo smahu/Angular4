@@ -1,0 +1,8 @@
+
+<div *ngIf="!afterLogin">
+<h1>Hello</h1>
+<!--<a routerLink="/user" routerLinkActive="active">Click Here to Login</a>-->
+<button mat-button (click)="OnClick()">Sign In</button>
+</div>
+<app-nav-bar></app-nav-bar>
+<router-outlet></router-outlet>
