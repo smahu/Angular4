@@ -11,7 +11,7 @@ import {LoginComponent} from "./login-component/login-component.component";
 const appRoutes: Routes = [
   { path: '', redirectTo: 'app', pathMatch: 'full' },
   { path: 'main',component: AppComponent},
-  { path: 'user', component: LoginComponent,canActivate:[HomeGuard]},
+  { path: 'user', component: LoginComponent},
   { path:'home', component: HomePageComponent,canActivate:[LoginGuard]},
   { path:'table', component: TableComponent},
   { path:'userinfo', component: StepperComponent},
