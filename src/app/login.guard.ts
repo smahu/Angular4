@@ -7,10 +7,10 @@ export class LoginGuard implements CanActivate{
   constructor(private loginService: LoginService) {};
 
   canActivate() {
-    if (this.loginService.isLoggedIn()) {
+    if (!this.loginService.isLoggedIn()) {
       return true;
     } else {
-      window.alert("You don't have permission to view this page");
+      window.alert("You are already logged in.");
       return false;
     }
   }

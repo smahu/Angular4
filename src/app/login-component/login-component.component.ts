@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
     Validators.required
   ]);
   textValue:boolean
-
+textValue1;
   @Output()
   name: EventEmitter<any> = new EventEmitter();
 

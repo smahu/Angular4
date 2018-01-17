@@ -7,10 +7,10 @@ export class HomeGuard implements CanActivate{
   constructor(private loginService: LoginService) {};
 
   canActivate() {
-    if (this.loginService.isLoggedIn()) {
+    if (!this.loginService.isLoggedIn()) {
       return true;
     } else {
-      window.alert("go back");
+      window.alert("Already Logged In");
       return false;
     }
   }

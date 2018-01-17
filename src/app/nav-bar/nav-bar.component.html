@@ -1,6 +1,6 @@
-<div *ngIf="ls.isLoggedIn()" >
-<nav class="navbar navbar-expand-sm bg-light navbar-light">
-  <ul class="navbar-nav" routerLinkActive="active" >
+<div *ngIf="_ls.isLoggedIn()" >
+<nav class="navbar navbar-inverse">
+  <ul class="nav navbar-nav" routerLinkActive="active" >
     <li class="nav-item active">
       <a class="nav-link" [routerLink]="['/home']" matTooltip="Homepage!">Home</a>
     </li>
