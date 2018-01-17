@@ -11,7 +11,7 @@ import {LoginService} from "../login.service";
 })
 export class NavBarComponent implements OnInit {
   selected = '';
-  constructor(public snackBar: MatSnackBar,public ls:LoginService) { }
+  constructor(private snackBar: MatSnackBar,private ls:LoginService) { }
 
   ngOnInit() {
   }

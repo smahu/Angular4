@@ -16,7 +16,8 @@ export class LoginComponent implements OnInit {
   emailFormControl1 = new FormControl('', [
     Validators.required
   ]);
-  textValue:boolean
+  textValue:boolean;
+  textValue1:boolean;
 
   @Output()
   name: EventEmitter<any> = new EventEmitter();
